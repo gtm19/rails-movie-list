@@ -8,3 +8,22 @@
     </li>
   <% end %>
 </ul>
+
+<h3>Reviews</h3>
+
+<%= link_to "Add review", new_list_review_path(@list) %>
+
+<div class="review-container">
+
+<% @reviews.each do |review| %>
+  <div class="review">
+    <p>Rating: <%= review.rating %></p>
+    <p><%= review.comment %></p>
+    <p>
+      <%= link_to "edit", edit_review_path(review) %> | <%= link_to "delete", review_path(review), method: :delete %>
+    </p>
+  </div>
+<% end %>
+
+
+</div>

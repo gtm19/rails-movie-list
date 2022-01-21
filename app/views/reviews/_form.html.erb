@@ -1,0 +1,14 @@
+
+<% if list %>
+  <%= simple_form_for [list, review] do |f| %>
+    <%= f.input :rating %>
+    <%= f.input :comment %>
+    <%= f.button :submit %>
+  <% end %>
+<% else %>
+  <%= simple_form_for review do |f| %>
+  <%= f.input :rating %>
+    <%= f.input :comment %>
+    <%= f.button :submit %>
+  <% end %>
+<% end %>
