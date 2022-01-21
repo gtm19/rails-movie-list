@@ -41,7 +41,7 @@ all_movies = Movie.all
 
 if all_movies.empty?
   # get 10 top rated movies
-  top_movies_results = top_rated(n = 25)
+  top_movies_results = top_rated(n = 50)
   # seed each to database
   top_movies_results.each do |result|
     movie = Movie.create(
