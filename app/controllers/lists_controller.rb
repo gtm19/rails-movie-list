@@ -4,7 +4,7 @@ class ListsController < ApplicationController
   end
 
   def show
-    @list = List.find(params[:id])
+    @list = List.includes(:movies).find(params[:id])
   end
 
   def new
