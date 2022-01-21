@@ -1,3 +1,10 @@
-<h1>Reel Lists</h1>
-<p>The best way to find films to watch, as long as they are already in our database</p>
-<%= link_to "To the lists", lists_path %>
+<%= image_tag "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1625&q=80", class: "img-background", alttext: "The exterior of a cinema" %>
+
+<div class="home-body">
+  <div class="home-card shadow">
+    <h1 class="text-primary display-1">Reel Lists</h1>
+    <p>The best way to find films to watch, as long as they are already in our database</p>
+    <%= link_to "To the lists!", lists_path, class: "btn btn-primary" %>
+  </div>
+</div>
+

@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+.img-background {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: fixed;
+  z-index: -99;
+}
+
+.home-body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-card {
+  background: rgba($color: #ffffff, $alpha: 0.95);
+  width: fit-content;
+  border: 1px solid $primary;
+  border-radius: 8px;
+  padding: 24px;
+  margin: auto;
+  text-align: center;
+}
