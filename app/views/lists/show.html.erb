@@ -1,7 +1,9 @@
-<h1><%= @list.name %></h1>
+<header class="mt-2 d-flex flex-row justify-content-between">
+  <h1><%= @list.name %></h1>
+  <%= link_to "Add movie", new_list_bookmark_path(@list), class: "btn btn-primary d-flex align-items-center" %>
+</header>
 
 <ul>
-  <%= link_to "Add movie", new_list_bookmark_path(@list) %>
   <% @list.bookmarks.each do |bookmark| %>
     <li>
       <%= bookmark.movie.title %> | <%= bookmark.movie.rating %> | <%= link_to "remove", bookmark_path(bookmark), method: :delete %>
